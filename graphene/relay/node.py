@@ -58,7 +58,8 @@ class NodeField(Field):
             # interface
             type or node,
             description='The ID of the object',
-            id=ID(required=True)
+            id=ID(required=True),
+            **kwargs
         )
 
     def get_resolver(self, parent_resolver):
